@@ -81,8 +81,60 @@
 
 </div>
     </div>
+    <div class="formulario" id="formulario">
+        <h5>Contacto </h5>
+        <p>Si queres ponerte en contacto para charlar sobre algun proyecto, colaboracíon o consulta, completa el formulario y te responderé a la brevedad </p>
+        <form method="POST" name="my-google-sheet" id="my-google-sheet">
+            <input type="text" id="name" class="nombre" name="nombre" placeholder="Nombre y Apellido">
+            <input type="text" id="email"class="email" name="email" placeholder="correo electronico">
+           
+            <div >
+                <textarea class="inquietud"  name="inquietud" id="" cols="35" rows="4"></textarea>
+            </div>
+      
+            
+            
+                <div class="enviar">
+                    <button type="submit" onclick="SendFormGoogleSheets()" >
+                        enviar
+                    </button>
+                </div>
+                
+            
+        </form>
 
+    </div> 
+    <div class="respuesta" id="respuesta">
+        <p>
+            <span id="nombreR"></span> <br> <br>
+           <span id="respuestaR"> </span>
+    
+        </p>
+       
+    </div>
 
+        <script src="https://code.jquery.com/jquery-3.6.0.js"  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    <script>
+      function SendFormGoogleSheets (){
+        $.ajax({
+          url:'https://script.google.com/macros/s/AKfycbyuZihxyl5TuLVi8swae8AWQuuJ3x5K_ujOwEcrQUekpJl7hS4vt6PYCXsKZaydmQVCpA/exec',
+          type:'post',
+          data:$("#my-google-sheet").serializeArray(),
+          success: function(){
+            alert("Registro exitoso")
+          },
+          error: function(){
+            alert("Error en el Registro :(")
+          }
+      });
+    }
+    </script>
+
+<footer>
+    <p>mariagrassi0207@gmail.com</p>
+    <p>+ 54 9 2345 478542</p>
+
+</footer>
 
 
 <!--Soy Maria Grassi diseñadora multimedial con interes en la programacion y electronica Tambien soy voluntaria de la Asociacion de Guias Argentinas una organizacion  no formal donde el aprendizaje a traves del juego es una pieza fundamental y bailo folklore-->
