@@ -1,0 +1,53 @@
+body{background-color: rgb(32, 32, 32) ;
+    font-family: 'Lucida Sans Unicode';}
+header{ color:rgb(116, 241, 13);
+    font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    height: 70vh;
+    text-align: center;
+}
+h1{ text-align: center;
+    font-size: 20vh;}
+
+#proyects{
+    color: aliceblue;
+    font-size: 11pt;
+}
+.section{
+    display: block;
+   
+}
+.proyect{  border: 1px solid ;border-color: rgb(13, 188, 241)a;
+    width: 70vw;
+    display: block;
+    background-color: black;
+    margin: 3vw;
+    margin-left: 10vw;
+    padding: 3vw;
+    border-radius: 5pt;
+}
+
+.proyect h3{
+    font-size: 20pt;
+    color:rgb(116, 241, 13);
+    font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.proyect p{
+    size: 12pt;
+    color: beige;
+}
+iframe{
+    width: 70vw;
+    height: 70vh;
+}
+.title{
+    margin-left: 10vw;
+}
+h2, h3{ 
+    font-size: 20pt;
+    color:rgb(116, 241, 13);
+    font-family: "Electrolize", sans-serif;
+}
